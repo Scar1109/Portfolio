@@ -140,10 +140,10 @@ export const Library_skill = [
         height: 80,
     },
     {
-        skill_name: "Android",
-        Image: "/android.png",
-        width: 70,
-        height: 70,
+        skill_name: "Vite Js",
+        Image: "/vite.png",
+        width: 80,
+        height: 80,
     },
 
     {

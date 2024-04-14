@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, StarsCanvas, Hero, YouTube, Contact, Skills} from "./components"
+import { Navbar, StarsCanvas, Hero, YouTube, Contact, Skills, Projects} from "./components"
 
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
                 <Hero />
                 <YouTube />
                 <Skills />
+                <Projects />
                 <Contact />
             </div>
         </>
