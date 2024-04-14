@@ -47,7 +47,7 @@ function Projects() {
                     <ProjectCard
                         src="/hangman.png"
                         title="Hangman Game"
-                        description="This is a simple hangman game which is developed using TypeScript. This project was built to get an good idea about TypeScript and how to use it. Additionally this project uses the words api for the words."
+                        description="This is a simple hangman game which is developed using TypeScript. This project was built to get an good idea about TypeScript and how to use it. Additionally this project uses the words api for the words. This simple game is capable of play hangman with the computer."
                         live_link="https://github.com/Scar1109/HangMan-Game--TypeScript"
                     />
                 </div>
