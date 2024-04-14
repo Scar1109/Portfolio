@@ -4,8 +4,13 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"cd client && npm run dev\" \"nodemon server.js\""
+    "build": "cd client && npm install",
+    "build3": "cd client && npm install vite",
+    "install-client": "cd client && npm run build",
+    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; npm run build3 && npm run build --only=dev;",
+    "heroku-postbuild": "npm run install-client",
+    "start": "node server.js",
+    "client": "cd client && npm run dev"
   },
   "author": "",
   "license": "ISC",
