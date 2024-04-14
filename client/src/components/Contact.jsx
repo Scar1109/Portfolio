@@ -65,7 +65,7 @@ const Contact = () => {
                 </p>
                 <h3
                     className={
-                        "font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px]"
+                        "font-black text-white lg:text-[70px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px]"
                     }
                 >
                     Contact
