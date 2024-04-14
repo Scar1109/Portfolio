@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
+import axios from "axios";
 
 import EarthCanvas from "./EarthCanvas";
 import SectionWrapper from "./hoc/SectionWrapper";
@@ -25,11 +26,31 @@ const Contact = () => {
         });
     };
 
-    const handleSubmit = (e) => {};
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        try {
+            const res = await axios.post("/api/emails/userMessage", form);
+            if (res.status === 200) {
+                alert("Message sent successfully");
+                formRef.current.reset();
+                form.email = "";
+                form.name = "";
+                form.message = "";
+            }
+        }
+        catch (err) {
+            alert("Failed to send message");
+        }
+        finally {
+            setLoading(false);
+        }
+    };
 
     return (
         <div
-            className={`xl:mt-0 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+            className={`mt-0 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
         >
             <motion.div
                 variants={slideIn("left", "tween", 0.2, 1)}
@@ -47,24 +68,25 @@ const Contact = () => {
                         "font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px]"
                     }
                 >
-                    Contact.
+                    Contact
                 </h3>
 
                 <form
                     ref={formRef}
                     onSubmit={handleSubmit}
-                    className="mt-12 flex flex-col gap-8"
+                    className="mt-8 flex flex-col gap-8"
                 >
                     <label className="flex flex-col">
                         <span className="text-white font-medium mb-4">
                             Your Name
                         </span>
                         <input
+                            required
                             type="text"
                             name="name"
                             value={form.name}
                             onChange={handleChange}
-                            placeholder="What's your good name?"
+                            placeholder="What's your name?"
                             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                         />
                     </label>
@@ -73,11 +95,13 @@ const Contact = () => {
                             Your email
                         </span>
                         <input
+                            required
                             type="email"
                             name="email"
                             value={form.email}
                             onChange={handleChange}
-                            placeholder="What's your web address?"
+                            placeholder="What's your email address?"
+                            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                             className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
                         />
                     </label>
@@ -86,6 +110,7 @@ const Contact = () => {
                             Your Message
                         </span>
                         <textarea
+                            required
                             rows={7}
                             name="message"
                             value={form.message}
@@ -106,7 +131,7 @@ const Contact = () => {
 
             <motion.div
                 variants={slideIn("right", "tween", 0.2, 1)}
-                className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+                className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px] mt-4"
             >
                 <EarthCanvas />
             </motion.div>
