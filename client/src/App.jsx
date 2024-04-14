@@ -1,8 +1,6 @@
-// App.js
 import React from "react";
-import StarsCanvas from "./components/StarsCanvas";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import { Navbar, StarsCanvas, Hero, YouTube} from "./components"
+
 
 function App() {
     return (
@@ -13,6 +11,7 @@ function App() {
             <div>
                 <Navbar />
                 <Hero />
+                <YouTube />
             </div>
         </>
     );

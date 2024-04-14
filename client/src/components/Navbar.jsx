@@ -37,13 +37,13 @@ const Navbar = () => {
 
                 <div className="flex items-center space-x-4">
                     {Socials.map((social) => (
-                        <img
+                        <a href={social.link} target="_blank"><img
                             src={social.src}
                             alt={social.name}
                             key={social.name}
                             width={24}
                             height={24}
-                        />
+                        /></a>
                     ))}
                 </div>
             </div>
