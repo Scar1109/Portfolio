@@ -53,6 +53,8 @@ function HeroContent() {
                 </motion.p>
 
                 <motion.a
+                    href="../../public/CV.pdf"
+                    download="Kaveen_Dinethma_CV.pdf"
                     variants={slideInFromLeft(1)}
                     className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
                 >
