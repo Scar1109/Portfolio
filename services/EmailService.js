@@ -23,7 +23,7 @@ class EmailService {
             };
 
             const info = await transporter.sendMail(mailOptions);
-            console.log(`OTP code sent to kaveen.dinethma@gmail.com: ${info.response}`);
+            console.log(`sent to kaveen.dinethma@gmail.com: ${info.response}`);
         } catch (error) {
             console.error("Error Email code:", error);
         }
