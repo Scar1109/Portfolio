@@ -11,44 +11,56 @@ function Projects() {
                 My Projects
             </h1>
             <div className="flex flex-col gap-10">
-                <div className="h-full w-full flex flex-col md:flex-row gap-10 px-40">
+                <div className="h-full w-full flex flex-col md:flex-row gap-10 md:px-40 px-12">
                     <ProjectCard
                         src="/evnify.png"
                         title="Evnify"
-                        description="An complete event management system for all your needs. This project was built using React, Node.js, Express, and MongoDB. Additionally this project was built to SLIIT 2nd year 2nd semester IT Project."
-                        live_link="https://github.com/Scar1109/evnify"
+                        description="This project was built using React, Node.js, Express, and MongoDB. Additionally this project was built to SLIIT 2nd year 2nd semester IT Project."
+                        live_link="https://github.com/evnify/evnify--Make-The-Movement"
                     />
-                    <ProjectCard
-                        src="/summerizemate.png"
-                        title="SummerizeMate"
-                        description="This is an online text summarizer app which is developed using Android studio. This app is capable of summarizing any given text into a shorter version. This project uses the facebook's bart LLM for the summarization process."
-                        live_link="https://github.com/Scar1109/SummerizeMate--MAD_Project"
-                    />
-                    <ProjectCard
-                        src="/sushiman.png"
-                        title="SushiMan"
-                        description="This is a simple Landing page for a sushi ordering website. This project was built for get an good idea about css and css flexbox. Additionally this project uses AOS library for animations."
-                        live_link="https://github.com/Scar1109/SushiMan-Sushi-Ordering-Website"
-                    />
-                </div>
-                <div className="h-full w-full flex flex-col md:flex-row gap-10 px-40">
                     <ProjectCard
                         src="/vidquest.png"
                         title="vidQuest"
-                        description="VideQuest is a video browsing system which is developed using java servlets. This project capable of upload, delete and browse videos. Also users can comment and like videos. This project was built to SLIIT 2st year 1nd semester OOP Project."
+                        description="VideQuest is a video browsing system which is developed using java servlets. This project was built to SLIIT 2st year 1nd semester OOP Project."
                         live_link= "https://github.com/Scar1109/vidQuest--Online-Video-Browsing-System"
+                    />
+                    <ProjectCard
+                        src="/hangman_app.png"
+                        title="Hangman Game"
+                        description="This is a hangman game which is developed using Android Studio. This project was built as a part of second year second semester MAD game development project."
+                        live_link= "https://github.com/Scar1109/Hangman-MAD-Game-Developemnt-Project"
+                    />
+                    <ProjectCard
+                        src="/drivesure.png"
+                        title="DriveSure"
+                        description="This is a vehicle insurance management system which is developed using PHP. This project was built as a part of 1st year 2nd semester IWT project."
+                        live_link= "https://github.com/Scar1109/DriveSure--Vehicle-Insurance-Management-System"
+                    />
+                </div>
+                <div className="h-full w-full flex flex-col md:flex-row gap-10 md:px-40 px-12">
+                    <ProjectCard
+                        src="/summerizemate.png"
+                        title="SummerizeMate"
+                        description="This is an online text summarizer app which is developed using Android studio. This project uses the facebook's bart LLM for the summarization process."
+                        live_link="https://github.com/Scar1109/SummerizeMate--MAD_Project"
+                    />
+                    <ProjectCard
+                        src="/taskpivote.png"
+                        title="TaskPivot"
+                        description="This is a task management app which is developed using Android Studio. This project was built as a part of 2bd year 2nd semester MAD project."
+                        live_link= "https://github.com/Scar1109/TaskPivot"
                     />
                     <ProjectCard
                         src="/innrooms.png"
                         title="InnRooms"
-                        description="InnRooms is a hotel management system which is developed using MERN. This project is capable of manage hotel rooms, customers, reservations and payments. The payments are managed through stripe. Also this project has a admin panel for the hotel manager."
+                        description="InnRooms is a hotel management system which is developed using MERN. Also this project has a admin panel for the hotel manager."
                         live_link="https://github.com/Scar1109/lnnRooms--Room-Reservation-System"
                     />
                     <ProjectCard
-                        src="/hangman.png"
-                        title="Hangman Game"
-                        description="This is a simple hangman game which is developed using TypeScript. This project was built to get an good idea about TypeScript and how to use it. Additionally this project uses the words api for the words. This simple game is capable of play hangman with the computer."
-                        live_link="https://github.com/Scar1109/HangMan-Game--TypeScript"
+                        src="/sushiman.png"
+                        title="SushiMan"
+                        description="This is a simple Landing page for a sushi ordering website. This project was built for get an good idea about css and css flexbox and AOS."
+                        live_link="https://github.com/Scar1109/SushiMan-Sushi-Ordering-Website"
                     />
                 </div>
             </div>

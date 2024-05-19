@@ -4,7 +4,7 @@ import { github } from "../assets";
 const ProjectCard = ({ src, title, description, live_link }) => {
     return (
         <a href={live_link} target="_blank">
-            <div className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] cursor-pointer">
+            <div className="relative min-h-[360px] overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] cursor-pointer">
                 <img
                     src={src}
                     alt={title}
