@@ -11,7 +11,7 @@ function Projects() {
                 My Projects
             </h1>
             <div className="flex flex-col gap-10">
-                <div className="h-full w-full flex flex-col md:flex-row gap-10 px-40">
+                <div className="h-full w-full flex flex-col md:flex-row gap-10 md:px-40 px-12">
                     <ProjectCard
                         src="/evnify.png"
                         title="Evnify"
@@ -31,7 +31,7 @@ function Projects() {
                         live_link="https://github.com/Scar1109/SushiMan-Sushi-Ordering-Website"
                     />
                 </div>
-                <div className="h-full w-full flex flex-col md:flex-row gap-10 px-40">
+                <div className="h-full w-full flex flex-col md:flex-row gap-10 md:px-40 px-12">
                     <ProjectCard
                         src="/vidquest.png"
                         title="vidQuest"
