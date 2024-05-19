@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { slideInFromLeft, slideInFromTop } from "../utils/motion";
-import { SparklesIcon } from "@heroicons/react/16/solid";
 import { TypeAnimation } from "react-type-animation";
 
 function HeroContent() {
@@ -9,12 +8,13 @@ function HeroContent() {
         <motion.div
             initial="hidden"
             animate="visible"
-            className="flex flex-row items-center justify-center px-20 mt-20 w-full z-[20]"
+            className="flex flex-row items-center justify-center px-5 md:px-20 md:mt-20 mt-24 w-full z-[20]"
+            id="about-me"
         >
-            <div className="h-full w-full flex flex-col gap-5 justify-center mx-auto text-start">
+            <div className="h-full w-full flex flex-col gap-5 justify-center mx-auto text-start grow ">
                 <motion.div
                     variants={slideInFromLeft(0.5)}
-                    className="flex flex-col mt-30 gap-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto whitespace-nowrap"
+                    className="flex flex-col mt-30 gap-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto whitespace-nowrap"
                 >
                     <span>
                         Hi,{" "}
@@ -30,7 +30,7 @@ function HeroContent() {
                             1000,
                             "Full Stack Developer",
                             1000,
-                            "Mobile App Developer",
+                            "Mobile Developer",
                             1000,
                         ]}
                         wrapper="span"
@@ -62,13 +62,12 @@ function HeroContent() {
 
             <motion.div
                 variants={slideInFromLeft(0.8)}
-                className="w-full h-full flex justify-center items-center"
+                className="w-full h-full  justify-center hidden md:flex items-center grow mt-10"
             >
                 <img
                     src="/mainIconsdark.svg"
                     alt="work icons"
-                    height={600}
-                    width={600}
+                    className="w-10/12 h-auto"
                 />
             </motion.div>
         </motion.div>
