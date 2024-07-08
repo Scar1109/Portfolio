@@ -9,6 +9,7 @@ const Navbar = () => {
                     href="#about-me"
                     className="flex items-center"
                 >
+                    
                     <img
                         src="/NavLogo.png"
                         alt="logo"
