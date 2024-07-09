@@ -31,7 +31,7 @@ const Contact = () => {
         setLoading(true);
 
         try {
-            const res = await axios.post("/api/emails/userMessage", form);
+            const res = await axios.post("http://localhost:5000/api/emails/userMessage", form);
             if (res.status === 200) {
                 alert("Message sent successfully");
                 formRef.current.reset();
