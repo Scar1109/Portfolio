@@ -28,9 +28,9 @@ function HeroContent() {
                             1500,
                             "Content Creator",
                             1000,
-                            "Full Stack Developer",
+                            "RPA Developer",
                             1000,
-                            "Mobile Developer",
+                            "DevOps Engineer",
                             1000,
                         ]}
                         wrapper="span"
@@ -44,8 +44,8 @@ function HeroContent() {
                     className="text-lg text-gray-400 my-5 max-w-[600px]"
                 >
                     I'm a undergraduate software engineer with experience in
-                    JavaScript,TypeScript and Java and expertise in frameworks
-                    like React and Node.js. I'm a quick learner and I am always
+                    UiPath RPA Development, DevOps and expertise in frameworks
+                    like React and Node.js. Also I have experience with Java, C# and C++. I'm a quick learner and I am always
                     looking for opportunities to learn and grow as a developer,
                     and I am excited to use my skills to make a positive impact
                     and continue my career in the field of Information
