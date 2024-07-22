@@ -2,20 +2,20 @@ export const Skill_data = [
     {
         skill_name: "Html 5",
         Image: "/html.png",
-        width: 80,
-        height: 80,
+        width: 75,
+        height: 75,
     },
     {
         skill_name: "Css",
         Image: "/css.png",
-        width: 80,
-        height: 80,
+        width: 85,
+        height: 85,
     },
     {
         skill_name: "Java Script",
         Image: "/js.png",
-        width: 65,
-        height: 65,
+        width: 60,
+        height: 60,
     },
     {
         skill_name: "Bash",
@@ -32,8 +32,8 @@ export const Skill_data = [
     {
         skill_name: "Type Script",
         Image: "/ts.png",
-        width: 70,
-        height: 70,
+        width: 60,
+        height: 60,
     },
     {
         skill_name: "Kotlin",
@@ -56,14 +56,20 @@ export const Skill_data = [
     {
         skill_name: "C",
         Image: "/c.png",
-        width: 65,
-        height: 65,
+        width: 60,
+        height: 60,
     },
     {
         skill_name: "PHP",
         Image: "/php.png",
         width: 80,
         height: 80,
+    },
+    {
+        skill_name: "React Native",
+        Image: "csharp.png",
+        width: 70,
+        height: 70,
     },
     {
         skill_name: "React Native",
@@ -213,6 +219,12 @@ export const Backend_skill = [
 
 export const Full_stack = [
     {
+        skill_name: "UiPath",
+        Image: "/uipath.png",
+        width: 70,
+        height: 70,
+    },
+    {
         skill_name: "Davinchi Resolve",
         Image: "/DaVinci_Resolve.png",
         width: 70,
@@ -237,9 +249,22 @@ export const Full_stack = [
         width: 70,
         height: 70,
     },
+
+    {
+        skill_name: "docker",
+        Image: "/docker.png",
+        width: 70,
+        height: 70,
+    },
 ];
 
 export const Other_skill = [
+    {
+        skill_name: "Azure",
+        Image: "/azure.png",
+        width: 80,
+        height: 80,
+    },
     {
         skill_name: "Git",
         Image: "/git.png",
