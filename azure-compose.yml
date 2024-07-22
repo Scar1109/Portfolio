@@ -1,0 +1,19 @@
+version: '3.8'
+
+
+services:
+
+  frontend:
+    image: kdportfolio.azurecr.io/frontend:latest
+    container_name: frontend
+    ports:
+      - "3000:3000"
+
+  backend:
+    image: kdportfolio.azurecr.io/backend:latest
+    container_name: backend
+    ports:
+      - "5000:5000"
+    environment:
+      - GMAIL_EMAIL=dewapura.kaveen@gmail.com
+      - GMAIL_PASSWORD=izhmwqrgzqhqgcud
